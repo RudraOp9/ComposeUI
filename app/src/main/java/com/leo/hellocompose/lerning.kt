@@ -121,13 +121,11 @@ class lerning : ComponentActivity() {
 
                     )
                 }
-                Card(
-                    shape = RectangleShape, modifier = modifier.weight(0.5f), colors = CardColors(
-                        Color(0xFFD0BCFF), Color.Black,
-                        Color.Cyan,
-                        Color.Red
-                    )
-                ) {
+                Column(
+                    modifier = modifier.weight(0.5f)
+                        .background(Color(0xFFD0BCFF)),
+                    verticalArrangement = Arrangement.Center)
+                {
                     Text(text = "Row composable",
                         modifier = modifier
                             .padding(16.dp)
@@ -138,13 +136,12 @@ class lerning : ComponentActivity() {
                 }
             }
             Column(modifier = modifier.weight(0.5f)) {
-                Card(
-                    shape = RectangleShape, modifier = modifier.weight(0.5f), colors = CardColors(
-                        Color(0xFFD0BCFF), Color.Black,
-                        Color.Cyan,
-                        Color.Red
-                    )
-                ) {
+
+                Column(
+                    modifier = modifier.weight(0.5f)
+                        .background(Color(0xFFD0BCFF)),
+                    verticalArrangement = Arrangement.Center)
+                {
                     Text(text = "Image composable",
                         modifier = modifier
                             .padding(16.dp)
@@ -153,14 +150,9 @@ class lerning : ComponentActivity() {
                     Text(text = "Creates a composable that lays out and draws a given Painter class object.",
                         modifier.padding(16.dp))
                 }
-                Card(
-                    shape = RectangleShape, modifier = modifier.weight(0.5f), colors = CardColors(
-                        Color(0xFFEADDFF), Color.Black,
-                        Color.Cyan,
-                        Color.Red
-                    )
-                ) {
-                    Text(text = "Column composable",
+                Column(modifier = modifier.weight(0.5f).background(Color(0xFFEADDFF)), verticalArrangement = Arrangement.Center){
+
+                Text(text = "Column composable",
                         modifier = modifier
                             .padding(16.dp)
                             .align(Alignment.CenterHorizontally),
